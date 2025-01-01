@@ -139,7 +139,7 @@ const element = <h1>Hello, world!</h1>;
 - 리액트는 이 엘리먼트를 이용해서 DOM 엘리먼트를 생성함
 - React 엘리먼트의 생김새 - 자바스크립트 객체 형태로 존재함 - 컴포넌트 유형과 속성 및 내부의 모든 자식에 대한 정보를 포함하고 있는 자바스크립트 객체, 한번 생성하면 바꿀 수 없음
 
-  ````JSX
+  ```JSX
   {
   type : 'button',
   props : {
@@ -157,23 +157,22 @@ const element = <h1>Hello, world!</h1>;
               Hello, element!
           </b>
       </button>
-      ```
-      - type
-          -  html 태그 이름이 문자열로 들어가는 경우 엘리먼트는 해당 이름을 가진 DOM 노드를 나타냄
-          - 모든 React 컴포넌트는 최종적으로는 HTML 태그를 사용하게 되어있음.
-          - 그러므로 type에 HTML 태그를 사용하지 않고 React 컴포넌트를 사용할 수 있음
-          ```JSX
-          ex)     type : Button
-          ```
-      - props
-          - 엘리멘트의 속성
-          - HTML 태그의 클래스나 스타일 같은 속성(attributes)도 포함함
-      - children
-          - 해당 엘리먼트의 자식 엘리먼트들이 이 부분에 들어감
+  ```
+
+  - type
+    - html 태그 이름이 문자열로 들어가는 경우 엘리먼트는 해당 이름을 가진 DOM 노드를 나타냄
+    - 모든 React 컴포넌트는 최종적으로는 HTML 태그를 사용하게 되어있음.
+    - 그러므로 type에 HTML 태그를 사용하지 않고 React 컴포넌트를 사용할 수 있음
+    ```JSX
+    ex)     type : Button
+    ```
+  - props
+    - 엘리멘트의 속성
+    - HTML 태그의 클래스나 스타일 같은 속성(attributes)도 포함함
+  - children
+    - 해당 엘리먼트의 자식 엘리먼트들이 이 부분에 들어감
 
   <br>
-
-  ````
 
 - 예제 코드
 
