@@ -15,7 +15,7 @@
 	return <div>Hello {this.props.toWhat}</div>;
     
     // jsx 사용X
-    return React.createElement('div', null, `Hello $this.props.toWhat}`);
+    return React.createElement('div', null, `Hello ${this.props.toWhat}`);
     ```
 	> React.createElement()의 결과로 생성된 객체 : element
 	> ```jsx
@@ -38,7 +38,7 @@
     // 태그 중간에 js 추가
     function getGreeting(user) {
     	if (user) {
-        	return <h1> Hello, {formatName(user)}!</h1>;
+        	return <h1> Hello, {formatName(user)}</h1>;
         }
         return <h1> Hellom, Stanger.</h1>
     }
@@ -50,7 +50,7 @@
 	```jsx
     const element = (
     	<div>
-        	<h1>안녕하세요<'/h1>
+        	<h1>안녕하세요</h1>
             <h2>열심히 리액트를 공부해 봅시다!</h2>
         </div>
     );
@@ -146,7 +146,7 @@
 
 **props** 사용법
 - JSX 사용
-	```jsxx
+	```jsx
     function App(props) {
     	return (
         	<Profile
