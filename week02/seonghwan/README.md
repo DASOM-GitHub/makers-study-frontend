@@ -105,7 +105,7 @@ const element = <img src={user.avatarUrl}></img>;
 - 자식(children) 정의하기
 
 ```JSX
-// div태그의 children은 h1 태그그
+// div태그의 children은 h1 태그
 const element = (
     <div>
         <h1>this is test</h1>
