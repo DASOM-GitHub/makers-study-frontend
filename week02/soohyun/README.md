@@ -49,10 +49,10 @@
 - children 정의
 	```jsx
     const element = (
-    	<div>
-        	<h1>안녕하세요</h1>
+	<div>
+            <h1>안녕하세요</h1>
             <h2>열심히 리액트를 공부해 봅시다!</h2>
-        </div>
+	</div>
     );
     ```
     div의 children은 h1, h2
@@ -76,13 +76,13 @@
 - JS 객체 형태
 	```jsx
     {
-    	type: 'button',
+        type: 'button',
         props: {
-        	className: 'bg-green',
+            className: 'bg-green',
             children: {
-            	type: 'b',
+                type: 'b',
                 props: {
-                	children: 'Hello, element!'
+                    children: 'Hello, element!'
                 }
             }
         }
@@ -90,8 +90,8 @@
     
     // rendering
     <button class='bg-green'>
-    	<b>
-        	Hello, element!
+        <b>
+            Hello, element!
         </b>
     </button>
     ```
@@ -108,7 +108,7 @@
   function tick() {
       const element = (
           <div>
-           	  <h1> 안녕, 리액트! </h1>
+  	      <h1> 안녕, 리액트! </h1>
               <h2> 현재 시간 : {new Date().toLocaleTimeString()}</h2>
           </div>
       );
@@ -138,7 +138,7 @@
 - 컴포넌트에 전달할 다양한 정보를 담고 있는 JS 객체
 - 붕어빵 재료
 
-![component and props](componentsandprops.png)
+![component and props](componentandprops.png)
 
 #### #3.1 Props
 **props**의 특징
@@ -149,8 +149,8 @@
 	```jsx
     function App(props) {
     	return (
-        	<Profile
-            	name="소플"
+ 	    <Profile
+                name="소플"
                 introduction="안녕하세요, 소플입니다."
                 viewCount={1500}
             />
@@ -160,7 +160,7 @@
 - JSX 사용X
 	```jsx
     React.createElement(
-    	Profile,
+        Profile,
         {
             name="소플"
             introduction="안녕하세요, 소플입니다."
@@ -177,7 +177,7 @@
 **Function Component** 와 **Class Component**
 - Function Component
 	```jsx
-	function Welcome(pros) {
+	function Welcome(props) {
 		return <h1> 안녕, {props.name}</h1>;
 	}
     ```
@@ -186,7 +186,7 @@
 	```jsx
     class Welcome extends React.Component {
     	render() {
-        	return <h1> 안녕, {props.name}</h1>;
+            return <h1> 안녕, {props.name}</h1>;
         }
     }
     ```
@@ -214,8 +214,8 @@
 - 여러 개의 컴포넌트를 합쳐서 또 다른 컴포넌트를 만드는 것
 - ```jsx
   return(
-  	<div>
-    	<Welcome name="Mike" />
+    <div>
+        <Welcome name="Mike" />
         <Welcome name="Steve" />
         <Welcome name="Jane" />
     </div>
@@ -253,13 +253,13 @@
 	1. Avatar 추출
 		```jsx
     	function Avatar(props) {
-    		return(
-        		<img className="avatar"
-                	src={props.user.avatarUrl}
-                	alt={proops.user.name}
-            	/>
-        	);
-    	}
+            return(
+                <img className="avatar"
+                    src={props.user.avatarUrl}
+                    alt={proops.user.name}
+                />
+            );
+        }
         
         function Comment(props) {
             return (
