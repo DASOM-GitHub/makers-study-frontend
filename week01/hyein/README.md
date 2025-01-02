@@ -1,6 +1,6 @@
 1주차
 
--HTML
+-HTML<br>
 웹사이트의 뼈대를 구성하기 위해 사용하는 마크업 언어<br>
 Tag 웹사이트의 구조를 만듦. 열었으면 꼭 닫아야 함. <html></html> 혹은 <br /><br>
 head와 body로 구성<br>
@@ -9,10 +9,10 @@ body 웹사이트에서 보이는 콘텐츠<br>
 SPA (Single Page Application) 단 하나의 페이지만 존재. Html 파일이 하나. 바디 태그의 내부가 비어 있다가 페이지에 접속할 때 그 페이지에 해당하는 콘텐츠를 가져와서 동적으로 채워넣음<br>
 Double Page Application 전통방식. 여러 개의 페이지가 존재. 각 페이지는 각자의 html 파일을 갖고 있음<br>
 
--CSS
+-CSS<br>
 웹사이트의 레이아웃, 글꼴, 색상 등의 디자인을 입히는 언어<br>
 
--JavaScript
+-JavaScript<br>
 스크립트 언어. 동적인 작업<br>
 프로그램 런타임에 코드가 해석됨<br>
 JavaScript 문법<br>
@@ -34,7 +34,7 @@ JavaScript 함수<br>
 - function statement : function 함수명(파라미터){ }
 - arrow function expression : const 함수명 = (파라미터) => { }
 
--React
+-React<br>
 React : 사용자 인터페이스를 만들기 위한 JavaScript 라이브러리(UI 라이브러리)<br>
 라이브러리 : 자주 사용되는 기능들을 정리해 모아 놓은 것<br>
 사용자 인터페이스(User Interface, UI) : 사용자와 컴퓨터 프로그램이 서로 상호작용을 하기 위해 중간에서 서로 간의 입출력을 제어해주는 것<br>
