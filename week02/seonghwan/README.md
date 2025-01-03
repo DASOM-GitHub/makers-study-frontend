@@ -105,13 +105,15 @@ const element = <img src={user.avatarUrl}></img>;
 - 자식(children) 정의하기
 
 ```JSX
-// div태그의 children은 h1 태그그
+// div태그의 children은 h1 태그
 const element = (
     <div>
         <h1>this is test</h1>
     </div>
 )
 ```
+
+---
 
 ### #2 Elements
 
@@ -121,7 +123,7 @@ const element = (
 - 엘리먼트는 웹사이트에 대한 모든 정보를 담고있는 객체인 DOM에서 사용하는 용어 (HTML 요소들) 이를 DOM elements 라고 함
 - 리액트에서는 화면에 나타나는 내용을 기술하는 자바스크립트 객체를 Virual DOM 이라고 함 (React 엘리먼트)
 
-![DOM엘리먼트](/makers-study-frontend/week02/seonghwan/Dom.png)
+![DOM엘리먼트](Dom.png)
 
 - 실제 브라우저의 DOM에 존재하는 엘리먼트는 DOM 엘리먼트
 - React의 Virtual DOM에 존재하는 엘리먼트는 React 엘리먼트
@@ -137,7 +139,7 @@ const element = <h1>Hello, world!</h1>;
 - 리액트는 이 엘리먼트를 이용해서 DOM 엘리먼트를 생성함
 - React 엘리먼트의 생김새 - 자바스크립트 객체 형태로 존재함 - 컴포넌트 유형과 속성 및 내부의 모든 자식에 대한 정보를 포함하고 있는 자바스크립트 객체, 한번 생성하면 바꿀 수 없음
 
-  ````JSX
+  ```JSX
   {
   type : 'button',
   props : {
@@ -155,23 +157,22 @@ const element = <h1>Hello, world!</h1>;
               Hello, element!
           </b>
       </button>
-      ```
-      - type
-          -  html 태그 이름이 문자열로 들어가는 경우 엘리먼트는 해당 이름을 가진 DOM 노드를 나타냄
-          - 모든 React 컴포넌트는 최종적으로는 HTML 태그를 사용하게 되어있음.
-          - 그러므로 type에 HTML 태그를 사용하지 않고 React 컴포넌트를 사용할 수 있음
-          ```JSX
-          ex)     type : Button
-          ```
-      - props
-          - 엘리멘트의 속성
-          - HTML 태그의 클래스나 스타일 같은 속성(attributes)도 포함함
-      - children
-          - 해당 엘리먼트의 자식 엘리먼트들이 이 부분에 들어감
+  ```
+
+  - type
+    - html 태그 이름이 문자열로 들어가는 경우 엘리먼트는 해당 이름을 가진 DOM 노드를 나타냄
+    - 모든 React 컴포넌트는 최종적으로는 HTML 태그를 사용하게 되어있음.
+    - 그러므로 type에 HTML 태그를 사용하지 않고 React 컴포넌트를 사용할 수 있음
+    ```JSX
+    ex)     type : Button
+    ```
+  - props
+    - 엘리멘트의 속성
+    - HTML 태그의 클래스나 스타일 같은 속성(attributes)도 포함함
+  - children
+    - 해당 엘리먼트의 자식 엘리먼트들이 이 부분에 들어감
 
   <br>
-
-  ````
 
 - 예제 코드
 
@@ -259,6 +260,8 @@ setInterval(tick, 1000);
 - tick 함수는 현재 시간을 포함하고 있는 엘리먼트를 생성하여 root에 렌더링함.
 - setInterval 함수를 사용해서 tick 함수를 1000ms 마다 호출함
 - 이때 페이지에는 매 초마다 새로운 시간이 나오게 되며, 이때 기존 엘리먼트를 변경하는것이 아닌, 새롭게 생성된 엘리먼트로 바꿔서 화면에 출력함.
+
+---
 
 ### #3 Components와 Props
 
