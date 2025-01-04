@@ -19,7 +19,7 @@ JavaScript + XML, HTML
  - Injection Attacks 방어 -> 보안성 향상
    + Injection Attacks : 입력창에 소스코드를 입력하여 해당 코드가 실행되도록 만드는 해킹 방법
 * JSX 사용법
- - 모든 JavaScript 문법 지원. 여기에 XML, HTML을 섞어서 사용
+ - 모든 JavaScript 문법 지원. 여기에 XML, HTML을 섞어서 사용<br>
    ` … XML / HTML  { JavaScript 코드 } … XML / HTML`
  - 태그의 속성(attribute)에 값을 넣는 방법
      + 큰따옴표 사이에 문자열을 넣기
@@ -57,16 +57,16 @@ function Library(props) {
 export default Library;
 ```
 ***
-##Element
-Elements are the smallest building blocks of React apps
-리액트 앱을 구성하는 가장 작은 블록들
+##Element<br>
+Elements are the smallest building blocks of React apps<br>
+리액트 앱을 구성하는 가장 작은 블록들<br>
 * React Elements와 DOM Elements
  - React Elements는 Virtual DOM에 존재
  - DOM Elements는 Browser DOM에 존재
  - React Elements는 DOM Elements의 가상 표현
  - DOM Elements는 React Elements보다 많은 정보를 담고 있어 상대적으로 크고 무거움
  - React Elements을 렌더링 -> DOM Elements
-Elements는 화면에서 보이는 것들을 기술
+Elements는 화면에서 보이는 것들을 기술<br>
   * Elements의 생김새
      - React Elements는 자바스크립트 객체 형태로 존재. 이 객체는 불변성을 가짐
      - React Elements를 렌더링하면 DOM Elements가 됨
@@ -105,21 +105,21 @@ function Clock(props) {
 export default Clock;
 ```
 ***
-##Components and Props
-붕어빵 틀: Component
-붕어빵 재료: props
-붕어빵: Element
+##Components and Props<br>
+붕어빵 틀: Component<br>
+붕어빵 재료: props<br>
+붕어빵: Element<br>
 
 ###Component
-JavaScript function이 입출력을 받는 것처럼 React component도 입출력을 받음
-React component의 입력: props
-React component의 출력: React element
-즉 React component는 만들고자 하는 대로 속성을 입력하면 해당 속성에 맞춰 화면에 나타날 element를 만듦
+JavaScript function이 입출력을 받는 것처럼 React component도 입출력을 받음<br>
+React component의 입력: props<br>
+React component의 출력: React element<br>
+즉 React component는 만들고자 하는 대로 속성을 입력하면 해당 속성에 맞춰 화면에 나타날 element를 만듦<br>
 
-###props
-Property
-Component의 속성
-컴포넌트에 전달할 다양한 정보를 담고 있는 자바스크립트 객체
+###props<br>
+Property<br>
+Component의 속성<br>
+컴포넌트에 전달할 다양한 정보를 담고 있는 자바스크립트 객체<br>
 * Props의 특징
 - Read-Only (읽기만 가능, 값 변경 불가)
   + 다른 props를 입력하려면 새로운 값을 Component에 전달하여 새로 Element생성
