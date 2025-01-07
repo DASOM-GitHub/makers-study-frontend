@@ -1,6 +1,6 @@
-#2주차
+# 2주차
 
-##JSX
+## JSX
 자바스크립트 확장 문법(A syntax extension to Javascript )
 JavaScript + XML, HTML
 * JSX 역할
@@ -57,7 +57,7 @@ function Library(props) {
 export default Library;
 ```
 ***
-##Element<br>
+## Element<br>
 Elements are the smallest building blocks of React apps<br>
 리액트 앱을 구성하는 가장 작은 블록들<br>
 * React Elements와 DOM Elements
@@ -105,18 +105,18 @@ function Clock(props) {
 export default Clock;
 ```
 ***
-##Components and Props<br>
+## Components and Props<br>
 붕어빵 틀: Component<br>
 붕어빵 재료: props<br>
 붕어빵: Element<br>
 
-###Component
+### Component
 JavaScript function이 입출력을 받는 것처럼 React component도 입출력을 받음<br>
 React component의 입력: props<br>
 React component의 출력: React element<br>
 즉 React component는 만들고자 하는 대로 속성을 입력하면 해당 속성에 맞춰 화면에 나타날 element를 만듦<br>
 
-###props<br>
+### props<br>
 Property<br>
 Component의 속성<br>
 컴포넌트에 전달할 다양한 정보를 담고 있는 자바스크립트 객체<br>
