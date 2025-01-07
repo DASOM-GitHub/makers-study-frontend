@@ -1,11 +1,11 @@
 # 3주차
 
 ## State
-React Component의 변경 가능한 데이터
-개발자가 정의함
-렌더링이나 데이터 흐름에 사용되는 값만 state에 포함시켜야 함. (그렇지 않은 값은 component에 인스턴스 필드로 정의)
+React Component의 변경 가능한 데이터<br />
+개발자가 정의함<br />
+렌더링이나 데이터 흐름에 사용되는 값만 state에 포함시켜야 함. (그렇지 않은 값은 component에 인스턴스 필드로 정의)<br />
 - state가 변경될 경우 component가 재렌더링되기 때문에 렌더링과 데이터 흐름에 관련 없는 값을 포함하면 component가 다시 렌더링되어 성능을 저하시키기 때문임
-JavaScript 객체
+JavaScript 객체<br />
 ```
 class LikeButton extends React.Component {
     constructor(props) {   //생성자
@@ -17,7 +17,7 @@ class LikeButton extends React.Component {
     }
 }
 ```
-직접 수정할 수 없음 (하면 안 됨)
+직접 수정할 수 없음 (하면 안 됨)<br />
 ```
 //state를 직접 수정 (잘못된 사용법)
 this.state = {
@@ -30,14 +30,14 @@ this.setState({
 });
 ```
 ## Lifecycle
-React component의 생명주기 (생성되는 시점과 사라지는 시점이 정해져 있다는 의미)
-Component가 계속 존재하는 것이 아니라 시간의 흐름에 따라 생성되고 업데이트 되다가 사라짐
+React component의 생명주기 (생성되는 시점과 사라지는 시점이 정해져 있다는 의미)<br />
+Component가 계속 존재하는 것이 아니라 시간의 흐름에 따라 생성되고 업데이트 되다가 사라짐<br />
 ---
 ## Hooks
-훅을 사용하면 함수 컴포넌트도 클래스 컴포넌트의 기능 구현 가능
-원래 존재하는 기능에 마치 갈고리를 거는 것처럼 같이 수행되는 것을 의미
-React의 state와 생명주기 기능에 갈고리를 걸어 원하는 시점에 정해진 함수를 실행되도록 만든 것. 이때 실행되는 함수가 Hook
-Hook의 이름은 use로 시작함
+훅을 사용하면 함수 컴포넌트도 클래스 컴포넌트의 기능 구현 가능<br />
+원래 존재하는 기능에 마치 갈고리를 거는 것처럼 같이 수행되는 것을 의미<br />
+React의 state와 생명주기 기능에 갈고리를 걸어 원하는 시점에 정해진 함수를 실행되도록 만든 것. 이때 실행되는 함수가 Hook<br />
+Hook의 이름은 use로 시작함<br />
 
 * useState()
 - state를 사용하기 위한 Hook
