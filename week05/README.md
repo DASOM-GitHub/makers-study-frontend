@@ -146,7 +146,7 @@
   ```
 - flex-direction  
   ![flex-direction](flex2.png)  
-  ![asix](asix.png)
+  ![axis](axis.png)
 
 - align-items
   - cross axis를 기준으로 함  
